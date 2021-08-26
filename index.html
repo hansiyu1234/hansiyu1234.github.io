@@ -39,7 +39,7 @@
 		methods:{
 			search1:function(){
 				var that = this;
-				axios.get("http://music.163.com/api/search/get/web?csrf_token=hlpretag=&hlposttag=&s="+that.inputvalue+"&type=1&offset=0&total=true&limit=20")
+				axios.get("https://music.163.com/api/search/get/web?csrf_token=hlpretag=&hlposttag=&s="+that.inputvalue+"&type=1&offset=0&total=true&limit=20")
 				.then(function(response){
 					console.log(response);
 					that.note=response.data.result.songs;
